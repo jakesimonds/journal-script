@@ -5,7 +5,7 @@ ENTRY_DIR="$BASE_DIR/completed-entries/2023"
 DEFAULT_TEMPLATE="$BASE_DIR/default-template.txt"
 PROMPT_TEMPLATE="$BASE_DIR/prompt-template.txt"
 
-SCRIPT_PATH="$BASE_DIR/scripts/new-entry.py"
+SCRIPT_PATH="$BASE_DIR/scripts/newEntry.py"
 
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 
@@ -24,8 +24,8 @@ fi
 
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    xdg-open file.txt
+    xdg-open $NEW_ENTRY_PATH
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    open -a TextEdit file.txt
+    open -a TextEdit $NEW_ENTRY_PATH
 fi
 

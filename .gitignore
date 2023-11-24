@@ -1,1 +1,5 @@
 completed-entries/
+
+.env
+
+*.json

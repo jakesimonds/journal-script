@@ -1,0 +1,6 @@
+#your weatherapi.com key
+KEY = 
+#zipcode 
+ZIPCODE = 
+
+# books.json should be initialized: { "books": [] }
