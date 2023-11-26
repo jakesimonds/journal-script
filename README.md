@@ -51,5 +51,6 @@ This one is a little more involved & specific to my life but basically queries m
     - maybe I'll be more focused when I can't literally see other tabs I have open while journalling
     - maybe having the raw journal text already in .txt and organized by date will be nice down the line for text-analysis exploring stuff
 - (library script specifically) baby steps towards like other automated web stuff
+- code up something that I then actually use & can iteratively improve on
 
 Thank you for reading! Feel free to borrow/improve/steal anything. 
