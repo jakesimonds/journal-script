@@ -3,4 +3,3 @@ KEY =
 #zipcode 
 ZIPCODE = 
 
-# books.json should be initialized: { "books": [] }

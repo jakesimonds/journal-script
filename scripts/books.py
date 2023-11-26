@@ -15,7 +15,10 @@ def load_books(filename):
         with open(filename, 'r') as file:
             return json.load(file)
     except FileNotFoundError:
-        return {"books": []}
+        with open(filename, 'w') as file:
+            initial_books = {"books": []}
+            json.dump(initial_books, file, indent=4)
+        return initial_books
 
 # Function to save books to JSON file
 def save_books(filename, books):
@@ -35,7 +38,6 @@ def list_books(books):
         print("\n", formatted_book)
 
 def remove_book(books, book_title):
-
     formatted_title = book_title.replace(' ', '%20').lower()
     for book in books["books"]:
         if book["title"] == formatted_title:
@@ -44,8 +46,6 @@ def remove_book(books, book_title):
             return
     print(f"Book '{formatted_title}' not found in the list.")
 
-
-# Main function
 
 def main():
     parser = argparse.ArgumentParser(description="Manage a book list.")
