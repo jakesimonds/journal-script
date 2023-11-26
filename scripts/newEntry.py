@@ -24,7 +24,7 @@ def process_template(file_path):
         temp = get_temp(weather)
     
     #book business
-    # books_available = None
+    books_available = None
     if os.path.exists("scripts/books.json"):
         with open("scripts/books.json", 'r') as file:
             data = json.load(file)
