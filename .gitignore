@@ -1,4 +1,5 @@
 completed-entries/2023/*
+!completed-entries/2023/.gitkeep
 
 .env
 
