@@ -41,7 +41,20 @@ weatherChecker.py (in /scripts) queries weatherapi.com & then returns current te
 #### Library
 This one is a little more involved & specific to my life but basically queries my local library to see if newly-released books have been added to their system yet. Not terribly fancy, it uses URL-manipulation to search for the titles, and then BeautifulSoup parses the html & we just count up the elements that correspond to search results, and if that number is different than the number of search results the query generated when the book was added to books.json (& this new book I'm interested in wasn't in the system), it lets you know. 
 
+To CRUD book titles (or at least create and delete them), cd into /scripts and then:
 
+add:
+```
+python3 books.py -add 'number go up'
+``` 
+list
+```
+python3 books.py -l
+``` 
+remove
+```
+python3 books.py -rm 'number go up'
+``` 
 ## My Motivations (in making this)
 
 - baby's first bash script!

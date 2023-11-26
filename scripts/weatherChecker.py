@@ -21,7 +21,7 @@ def get_weather():
             return data
 
         except Exception as e:
-            print("Weather API issue!!")
+            print("get_weather() Weather API issue!!")
             return None
 
 
@@ -30,5 +30,5 @@ def get_temp(weather_data):
         temp = weather_data['current']['temp_f']
         return temp
     except Exception as e:
-        print("Weather API issue!!")
-        return "Weather API either not set up or broken. Consider any disappointment you might be feeling a prompt for journalling"
+        print("get_temp() Weather API issue!!")
+        return "Weather API either not set up or broken. Consider journalling about any disappointment you might be feeling right now."
