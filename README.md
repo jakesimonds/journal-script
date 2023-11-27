@@ -10,6 +10,7 @@ A way to journal easily and without distraction.
 ## What Files Are Important? 
 
 Two main files for understanding this project are: 
+
 **makeNewEntry.py** : python file that spins up a fresh .txt document for you 
 
 **write.sh** : bash script that takes care of directories and such
