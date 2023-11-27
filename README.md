@@ -13,7 +13,9 @@ Two main files for understanding this project are:
 makeNewEntry.py : python file that spins up a fresh .txt document for you 
 write.sh : bash script that takes care of directories and such
 
-**Note:** this is an educational project, and part of that was trying to make the whole thing somewhat reproducible (what with an env_template and all). No promises, though.
+Everything else is 
+
+**Note:** this is an educational project, and part of that was trying to make the whole thing somewhat reproducible. No promises, though.
 
 When you feel like journalling, cd into 'journal-script', run:
 
