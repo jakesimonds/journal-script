@@ -2,10 +2,10 @@ BASE_DIR="$(dirname "$0")"
 
 ENTRY_DIR="$BASE_DIR/completed-entries/2023"
 
-DEFAULT_TEMPLATE="$BASE_DIR/default-template.txt"
-PROMPT_TEMPLATE="$BASE_DIR/prompt-template.txt"
+DEFAULT_TEMPLATE="$BASE_DIR/entry-templates/default-template.txt"
+PROMPT_TEMPLATE="$BASE_DIR/entry-templates/prompt-template.txt"
 
-SCRIPT_PATH="$BASE_DIR/scripts/newEntry.py"
+SCRIPT_PATH="$BASE_DIR/makeNewEntry.py"
 
 CURRENT_DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 
