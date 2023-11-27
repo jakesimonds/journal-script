@@ -7,17 +7,20 @@ A way to journal easily and without distraction.
 
 
 
-## How to run/parse code
+## What Files Are Important? 
 
 Two main files for understanding this project are: 
-makeNewEntry.py : python file that spins up a fresh .txt document for you 
-write.sh : bash script that takes care of directories and such
+**makeNewEntry.py** : python file that spins up a fresh .txt document for you 
 
-Everything else is 
+**write.sh** : bash script that takes care of directories and such
 
-**Note:** this is an educational project, and part of that was trying to make the whole thing somewhat reproducible. No promises, though.
+That's the skeleton.
 
-When you feel like journalling, cd into 'journal-script', run:
+## How to Run:
+
+Download the requirements.txt if you want the library querying to work, otherwise comment out that part of makeNewEntry.py. If you want weather to work you have to get an API key (free), & make a .env off the template with your zip code & key, but it works fine without that too you just don't get to see your temperature.
+
+Cd into 'journal-script', run:
 
 ```./write.sh```
 
