@@ -1,15 +1,21 @@
 import requests
-from bs4 import BeautifulSoup
+
 
 
 def query_book(bookTitle):
-    url = f"https://portlandlibrary.bibliocommons.com/v2/search?query={bookTitle}&searchType=title"
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    try:
+        from bs4 import BeautifulSoup
+        url = f"https://portlandlibrary.bibliocommons.com/v2/search?query={bookTitle}&searchType=title"
+        response = requests.get(url)
+        soup = BeautifulSoup(response.content, 'html.parser')
 
-    results = soup.find_all('div', class_='cp-search-result-item-info')
+        results = soup.find_all('div', class_='cp-search-result-item-info')
 
-    return len(results) if results else 0
+        return len(results) if results else 0
+    except Exception as e:
+        print("Only an issue if you wanna query the library for books: ", e")
+        return 0
+        
 
 
 def query_library(books):
