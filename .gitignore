@@ -3,7 +3,7 @@ completed-entries/2023/*
 
 .env
 *.json
-__pycache__/
+**/__pycache__/
 journal_project/
 env/
 *.pyc
