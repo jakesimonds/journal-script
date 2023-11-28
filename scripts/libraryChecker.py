@@ -13,7 +13,7 @@ def query_book(bookTitle):
 
         return len(results) if results else 0
     except Exception as e:
-        print("Only an issue if you wanna query the library for books: ", e")
+        print("Only an issue if you wanna query the library for books: ", e)
         return 0
         
 
